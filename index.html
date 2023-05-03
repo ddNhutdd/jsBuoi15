@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập js 2</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="card">
+            <div class="card-header">
+                Bài 1
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="b1DiemChuan">Điểm chuẩn</label>
+                        <input type="number" class="form-control" id="b1DiemChuan">
+                    </div>
+                    <div class="form-group">
+                        <label for="b1KhuVuc">Chọn khu vực</label>
+                        <select class="form-control" id="b1KhuVuc">
+                            <option selected value="0">Chọn khu vực</option>
+                            <option value="2">A</option>
+                            <option value="1">B</option>
+                            <option value="0.5">C</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="b1DoiTuong">Chọn đối tượng</label>
+                        <select class="form-control" id="b1DoiTuong">
+                            <option value="0">Chọn đối tượng</option>
+                            <option value="2.5">1</option>
+                            <option value="1.5">2</option>
+                            <option value="1">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="b1Diem1">Điểm môn thứ nhất</label>
+                        <input type="number" class="form-control" id="b1Diem1">
+                    </div>
+                    <div class="form-group">
+                        <label for="b1Diem2">Điểm môn thứ hai</label>
+                        <input type="number" class="form-control" id="b1Diem2">
+                    </div>
+                    <div class="form-group">
+                        <label for="b1Diem3">Điểm môn thứ ba</label>
+                        <input type="number" class="form-control" id="b1Diem3">
+                    </div>
+                    <button id="bai1Btn" type="button" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="b1Result" class="alert alert-danger my-3" role="alert">
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                Bài 2
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="b2HoTen">Họ tên</label>
+                        <input type="text" class="form-control" id="b2HoTen">
+                    </div>
+                    <div class="form-group">
+                        <label for="b2Kwh">Số kwh</label>
+                        <input type="number" class="form-control" id="b2Kwh">
+                    </div>
+                    <button id="bai2Btn" type="button" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="b2Result" class="alert alert-danger my-3" role="alert">
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                Bài 3
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="b3HoTen">Họ tên</label>
+                        <input type="text" class="form-control" id="b3HoTen">
+                    </div>
+                    <div class="form-group">
+                        <label for="b3TongThuNhapNam">Tổng thu nhập năm (ghi rõ 6 số 0)</label>
+                        <input type="number" class="form-control" id="b3TongThuNhapNam">
+                    </div>
+                    <div class="form-group">
+                        <label for="b3SoNguoiPhuThuoc">Số người phụ thuộc</label>
+                        <input type="number" class="form-control" id="b3SoNguoiPhuThuoc">
+                    </div>
+                    <button id="bai3Btn" type="button" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="b3Result" class="alert alert-danger my-3" role="alert">
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                Bài 4
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="b4LoaiKhachHang">Chọn loại khách hàng:</label>
+                        <select id="b4LoaiKhachHang">
+                            <option value="0">Nhà dân</option>
+                            <option value="1">Doanh nghiệp</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="b4MaKH">Mã khách hàng</label>
+                        <input type="text" class="form-control" id="b4MaKH">
+                    </div>
+                    <div class="form-group">
+                        <label for="b4SoKenhCaoCap">Số kênh cao cấp</label>
+                        <input type="number" class="form-control" id="b4SoKenhCaoCap">
+                    </div>
+                    <div id="form-group-soKetNoi" class="form-group d-none">
+                        <label for="b4SoKetNoi">Số kết nối</label>
+                        <input type="number" class="form-control" id="b4SoKetNoi">
+                    </div>
+                    <button id="bai4Btn" type="button" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="b4Result" class="alert alert-danger my-3" role="alert">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery slim -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
